@@ -1,0 +1,22 @@
+.image {
+  clip-path: circle(50%);
+  z-index: 100;
+}
+
+.imageRing {
+  position: relative;
+  clip-path: circle(50%);
+  border: 5px solid red;
+  background: red;
+  width: 300px;
+  height: 299px;
+  margin: auto;
+  z-index: 99;
+  text-align: center;
+}
+
+.imageContainer {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  width: 100%;
+}

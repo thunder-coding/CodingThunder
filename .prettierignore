@@ -1,0 +1,14 @@
+# Dependencies
+/node_modules
+/package.json
+/yarn.lock
+
+# Version Control
+/.git
+
+# TypeScript
+/tsconfig.json
+
+# Nextjs cache and type declarations
+/.next
+/next-env.d.ts

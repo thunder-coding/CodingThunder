@@ -1,0 +1,24 @@
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+  background: #a9d0f4;
+}
+
+/* We don't need this
+@media (min-height: 1000px) {
+  .footer {
+    position: sticky;
+  }
+}
+*/
+
+@media (prefers-color-scheme: dark) {
+  .footer {
+    background: #692670;
+  }
+
+  .p {
+    color: #fff;
+  }
+}
