@@ -10,6 +10,7 @@ export default function Home() {
           height="300px"
           width="300px"
           src="/myimage.jpg"
+	  alt="Yaksh Bariya's photo"
         />
       </div>
     </div>
