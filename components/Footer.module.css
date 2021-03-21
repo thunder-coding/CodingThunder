@@ -5,6 +5,12 @@
   background: #a9d0f4;
 }
 
+.socialLinks img {
+  height: 30px;
+  width: 30px;
+  margin: 7.5px;
+}
+
 /* We don't need this
 @media (min-height: 1000px) {
   .footer {
@@ -14,11 +20,7 @@
 */
 
 @media (prefers-color-scheme: dark) {
-  .footer {
-    background: #692670;
-  }
-
   .p {
-    color: #fff;
+    color: #000;
   }
 }
