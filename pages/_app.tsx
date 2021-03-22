@@ -12,6 +12,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           name="keywords"
           content="Yaksh Bariya, CodingThunder, Coding Thunder, Yaksh Programmer"
         />
+        <title>Yaksh Bariya</title>
       </Head>
       <Component {...pageProps} />
       <Footer />
