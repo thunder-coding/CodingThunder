@@ -7,21 +7,21 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.socialLinks}>
-        <a href="https://codepen.io/thunder-coding">
+        <Link href="/codepen">
           <img src="codepen.svg" alt="CodePen Logo" />
-        </a>
-        <a href="https://github.com/thunder-coding">
+        </Link>
+        <Link href="/github">
           <img src="github.svg" alt="GitHub Logo" />
-        </a>
-        <a href="https://twitter.com/CodingThunder">
+        </Link>
+        <Link href="/twitter">
           <img src="twitter.svg" alt="Twitter Logo" />
-        </a>
-        <a href="https://discord.gg/YMhxGjzsJ8">
+        </Link>
+        <Link href="/discord">
           <img src="discord.svg" alt="Discord Logo" />
-        </a>
-        <a href="https://linkedin.com/in/codingthunder">
+        </Link>
+        <Link href="/linkedin">
           <img src="linkedin.svg" alt="LinkedIn Logo" />
-        </a>
+        </Link>
       </div>
       <p className={styles.p}>© {year} Yaksh Bariya</p>
     </footer>
