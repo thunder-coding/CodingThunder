@@ -4,8 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "next": "next",
     "build": "next build",
     "start": "next start",
+    "prettier": "prettier",
     "prettier-run": "prettier -w .",
     "prettier-check": "prettier -c ."
   },
