@@ -1,5 +1,5 @@
 .footer {
-  width: 100vw;
+  width: calc(100vw - 15px);
   text-align: center;
   padding: 5px;
   background: #a9d0f4;
