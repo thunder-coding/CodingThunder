@@ -1,8 +1,9 @@
 .footer {
-  width: 100%;
+  width: 100vw;
   text-align: center;
   padding: 5px;
   background: #a9d0f4;
+  margin-left: -15px;
 }
 
 .socialLinks img {
