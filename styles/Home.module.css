@@ -17,6 +17,38 @@
 
 .imageContainer {
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 20px;
   width: 100%;
+}
+
+.introduction {
+  padding: 5px;
+  margin-bottom: 15px;
+  border: 5px groove aqua;
+}
+
+.introduction p {
+  font-size: 150%;
+  text-indent: 50px;
+  text-align: justify;
+}
+
+.wavyHand {
+  display: inline-block;
+  animation: wave 1s infinite;
+}
+
+@keyframes wave {
+  0%,
+  100% {
+    transform: rotate(-25deg);
+  }
+
+  40% {
+    transform: rotate(50deg);
+  }
+
+  80% {
+    transform: rotate(0deg);
+  }
 }
