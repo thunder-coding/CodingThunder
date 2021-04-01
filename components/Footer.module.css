@@ -6,10 +6,33 @@
   margin-left: -15px;
 }
 
-.socialLinks img {
-  height: 30px;
-  width: 30px;
+.socialLinks .imgContainer {
+  display: inline-block;
+  height: 42px;
+  width: 42px;
   margin: 7.5px;
+  transition-duration: 0.5s;
+  padding-top: 3.5px;
+  border-radius: 50%;
+  background-color: #b9e7ff;
+  filter: drop-shadow(7px 7px 10px #43665a);
+}
+
+.socialLinks .imgContainer:hover {
+  transform: scale(1.5);
+}
+
+.socialLinks .imgContainer img {
+  height: 35px;
+  width: 35px;
+}
+
+.socialLinks .imgContainer img[src*='twitter'] {
+  transform: scale(calc(37 / 40));
+}
+
+.socialLinks .imgContainer img[src*='linkedin'] {
+  transform: scale(calc(32 / 40));
 }
 
 /* We don't need this

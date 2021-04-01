@@ -8,19 +8,29 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={styles.socialLinks}>
         <Link href="/codepen">
-          <img src="codepen.svg" alt="CodePen Logo" />
+          <div className={styles.imgContainer}>
+            <img src="codepen.svg" alt="CodePen Logo" />
+          </div>
         </Link>
         <Link href="/github">
-          <img src="github.svg" alt="GitHub Logo" />
+          <div className={styles.imgContainer}>
+            <img src="github.svg" alt="GitHub Logo" />
+          </div>
         </Link>
         <Link href="/twitter">
-          <img src="twitter.svg" alt="Twitter Logo" />
+          <div className={styles.imgContainer}>
+            <img src="twitter.svg" alt="Twitter Logo" />
+          </div>
         </Link>
         <Link href="/discord">
-          <img src="discord.svg" alt="Discord Logo" />
+          <div className={styles.imgContainer}>
+            <img src="discord.svg" alt="Discord Logo" />
+          </div>
         </Link>
         <Link href="/linkedin">
-          <img src="linkedin.svg" alt="LinkedIn Logo" />
+          <div className={styles.imgContainer}>
+            <img src="linkedin.svg" alt="LinkedIn Logo" />
+          </div>
         </Link>
       </div>
       <p className={styles.p}>© {year} Yaksh Bariya</p>
