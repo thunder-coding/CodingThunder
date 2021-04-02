@@ -16,15 +16,32 @@
   border-radius: 50%;
   background-color: #b9e7ff;
   filter: drop-shadow(7px 7px 10px #43665a);
+  background-image: linear-gradient(
+    135deg,
+    rgb(185, 231, 255) 50%,
+    rgb(185, 231, 255) 50%,
+    rgba(129, 194, 242, 1) 50%,
+    rgba(129, 194, 242, 1) 100%
+  );
+  background-repeat: no-repeat;
+  background-position: -84px;
 }
 
 .socialLinks .imgContainer:hover {
   transform: scale(1.5);
+  background-position: 42px 0px;
+  background-color: rgb(129, 194, 242);
+  border: 2px solid rgb(129, 194, 242);
 }
 
 .socialLinks .imgContainer img {
   height: 35px;
   width: 35px;
+  transition-duration: 0.5s;
+}
+
+.socialLinks .imgContainer img:hover {
+  filter: invert(0.1);
 }
 
 .socialLinks .imgContainer img[src*='twitter'] {
