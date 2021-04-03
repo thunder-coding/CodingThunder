@@ -20,8 +20,8 @@
     135deg,
     rgb(185, 231, 255) 50%,
     rgb(185, 231, 255) 50%,
-    rgba(129, 194, 242, 1) 50%,
-    rgba(129, 194, 242, 1) 100%
+    rgb(129, 194, 242) 50%,
+    rgb(129, 194, 242) 100%
   );
   background-repeat: no-repeat;
   background-position: -84px;
