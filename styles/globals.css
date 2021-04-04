@@ -16,11 +16,6 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
-  /*padding: 5px;*/
-}
-
 @media (prefers-color-scheme: dark) {
   body {
     background: #000;
