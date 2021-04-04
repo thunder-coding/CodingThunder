@@ -25,6 +25,7 @@
   );
   background-repeat: no-repeat;
   background-position: -84px;
+  box-sizing: border-box;
 }
 
 .socialLinks .imgContainer:hover {
