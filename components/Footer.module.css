@@ -26,6 +26,7 @@
   background-repeat: no-repeat;
   background-position: -84px;
   box-sizing: border-box;
+  transition-duration: 0.5s;
 }
 
 .socialLinks .imgContainer:hover {
@@ -38,7 +39,6 @@
 .socialLinks .imgContainer img {
   height: 35px;
   width: 35px;
-  transition-duration: 0.5s;
 }
 
 .socialLinks .imgContainer img:hover {
