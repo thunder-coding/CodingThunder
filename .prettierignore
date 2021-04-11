@@ -12,3 +12,6 @@
 # Nextjs cache and type declarations
 /.next
 /next-env.d.ts
+
+# Google Domain Verification page
+googlec967749bb6aee32a.html
