@@ -1,0 +1,39 @@
+.container {
+  min-height: 100vh;
+  width: 100%;
+}
+
+.errorCodeContainer .errorCode {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 120px;
+  user-select: none;
+}
+
+.errorCodeContainer .errorCode {
+  font-size: 120px;
+  width: fit-content;
+  -webkit-text-stroke: 1px #fff;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(
+    160deg,
+    rgb(185, 231, 255) 50%,
+    rgb(185, 231, 255) 50%,
+    rgb(129, 194, 242) 50%,
+    rgb(129, 194, 242) 100%
+  );
+}
+
+.errorCodeContainer .errorDescription {
+  position: absolute;
+  top: calc(50% + 64.5px);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+  margin: 0 auto;
+  width: fit-content;
+  color: #fff;
+}
