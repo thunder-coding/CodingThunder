@@ -1,5 +1,7 @@
 import Head from 'next/head';
+import Link from 'next/link';
 import styles from '../styles/404.module.css';
+
 
 export default function PageNotFound() {
   return (
@@ -12,7 +14,10 @@ export default function PageNotFound() {
           <div className={styles.errorCode}>404</div>
           <div className={styles.errorDescription}>Page Not Found</div>
         </div>
-      </div>{' '}
+      </div>
+      <Link href="/">
+        <button className={styles.homeButton}>HOME</button>
+      </Link>
     </>
   );
 }

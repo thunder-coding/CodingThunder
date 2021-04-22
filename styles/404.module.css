@@ -5,7 +5,7 @@
 
 .errorCodeContainer .errorCode {
   position: absolute;
-  top: 50%;
+  top: calc(50% - 54px);
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 120px;
@@ -29,11 +29,23 @@
 
 .errorCodeContainer .errorDescription {
   position: absolute;
-  top: calc(50% + 64.5px);
+  top: calc(50% + 14.5px);
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 25px;
   margin: 0 auto;
   width: fit-content;
   color: #fff;
+}
+
+.homeButton {
+  position: absolute;
+  border:none;
+  outline: none;
+  top: calc(50% + 54px);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 32px;
+  background: #a9f064;
+  border-radius: 5px;
 }
