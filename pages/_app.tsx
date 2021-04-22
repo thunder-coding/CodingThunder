@@ -14,10 +14,12 @@ function MyApp({ Component, pageProps }: AppProps) {
         />
         <meta property="og:image" content="/ogimage.jpg" />
         <meta property="og:title" content="Yaksh Bariya" />
+        <meta property="og:url" content="https://codingthunder.vercel.app" />
         <meta
           property="og:description"
           content="Personal website of Yaksh Bariya"
         />
+        <meta name="twitter:card" content="summary_large_image" />
         <title>Yaksh Bariya</title>
       </Head>
       <Component {...pageProps} />
