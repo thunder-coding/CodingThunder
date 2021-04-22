@@ -12,6 +12,12 @@ function MyApp({ Component, pageProps }: AppProps) {
           name="keywords"
           content="Yaksh Bariya, CodingThunder, Coding Thunder, Yaksh Programmer"
         />
+        <meta property="og:image" content="/ogimage.jpg" />
+        <meta property="og:title" content="Yaksh Bariya" />
+        <meta
+          property="og:description"
+          content="Personal website of Yaksh Bariya"
+        />
         <title>Yaksh Bariya</title>
       </Head>
       <Component {...pageProps} />
