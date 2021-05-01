@@ -17,13 +17,16 @@
   width: fit-content;
   -webkit-text-stroke: 1px #fff;
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
+  --color-1: #6959fa;
+  --color-2: #268f5e;
   background-image: linear-gradient(
     160deg,
-    rgb(185, 231, 255) 50%,
-    rgb(185, 231, 255) 50%,
-    rgb(129, 194, 242) 50%,
-    rgb(129, 194, 242) 100%
+    var(--color-1) 50%,
+    var(--color-1) 50%,
+    var(--color-2) 50%,
+    var(--color-2) 100%
   );
 }
 
@@ -40,7 +43,7 @@
 
 .homeButton {
   position: absolute;
-  border:none;
+  border: none;
   outline: none;
   top: calc(50% + 54px);
   left: 50%;
@@ -48,4 +51,14 @@
   font-size: 32px;
   background: #a9f064;
   border-radius: 5px;
+}
+
+
+
+@media (prefers-color-scheme: dark) {
+  .errorCodeContainer .errorCode {
+    --color-1: #b9e7ff;
+    --color-2: #81c2f2;
+    -webkit-text-stroke-color: #000;
+  }
 }
