@@ -9,7 +9,7 @@ interface FrontMatter {
   tags: ReadonlyArray<string>;
 }
 
-interface props {
+interface Props {
   children: JSX.Element | JSX.Element[];
   frontMatter: FrontMatter;
 }
