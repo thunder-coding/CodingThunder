@@ -30,8 +30,12 @@ export default function MDXPage({ children, frontMatter }: Props) {
       </Head>
       <main>
         <h1 className={styles.blogHeading}>{frontMatter.title}</h1>
-	<img src={frontMatter.ogImage} width="100%" alt="" />
-	<h3>{frontMatter.description}</h3>
+        {frontMatter.ogImage ? (
+          <img src={frontMatter.ogImage} width="100%" alt="" />
+        ) : (
+          ''
+        )}
+        <h3>{frontMatter.description}</h3>
         {children}
       </main>
     </>
