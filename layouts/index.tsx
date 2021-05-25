@@ -34,7 +34,7 @@ export default function MDXPage({ children, frontMatter }: Props) {
         ) : (
           ''
         )}
-        <h3>{frontMatter.description}</h3>
+        <p className={styles.blogDescription}>{frontMatter.description}</p>
         {children}
       </main>
     </>
