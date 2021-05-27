@@ -18,7 +18,7 @@ export default function MDXPage({ children, frontMatter }: Props) {
     <>
       <Head>
         <title>{frontMatter.title}</title>
-        <meta property="description" content={frontMatter.description} />
+        <meta name="description" content={frontMatter.description} />
         <meta property="og:description" content={frontMatter.description} />
         <meta property="og:title" content={frontMatter.title} />
         {frontMatter.ogImage ? (
