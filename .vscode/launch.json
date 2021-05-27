@@ -1,0 +1,23 @@
+{
+  "configurations": [
+    {
+      "command": "yarn build",
+      "name": "Do a production build",
+      "request": "launch",
+      "type": "node-terminal"
+    },
+    {
+      "command": "yarn start",
+      "name": "Start production server",
+      "request": "launch",
+      "type": "node-terminal"
+    },
+
+    {
+      "command": "yarn dev",
+      "name": "Start development server",
+      "request": "launch",
+      "type": "node-terminal"
+    }
+  ]
+}
