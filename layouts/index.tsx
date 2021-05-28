@@ -5,6 +5,8 @@ interface FrontMatter {
   title: string;
   ogImage?: string;
   description: string;
+  publishedTime: string;
+  modifiedTime?: string;
   tags: ReadonlyArray<string>;
 }
 
@@ -18,6 +20,7 @@ export default function MDXPage({ children, frontMatter }: Props) {
     <>
       <Head>
         <title>{frontMatter.title}</title>
+        <meta property="og:type" content="article" />
         <meta name="description" content={frontMatter.description} />
         <meta property="og:description" content={frontMatter.description} />
         <meta property="og:title" content={frontMatter.title} />
@@ -26,6 +29,22 @@ export default function MDXPage({ children, frontMatter }: Props) {
         ) : (
           ''
         )}
+        <meta
+          property="article:published_time"
+          content={new Date(
+            frontMatter.publishedTime + ' Z+5:30'
+          ).toISOString()}
+        />
+        {frontMatter.modifiedTime ? (
+          <meta
+            property="article:modified_time"
+            content={new Date(
+              frontMatter.modifiedTime + ' Z+5:30'
+            ).toISOString()}
+          />
+        ) : (
+          ''
+        )}{' '}
       </Head>
       <main>
         <h1 className={styles.blogHeading}>{frontMatter.title}</h1>
