@@ -15,6 +15,7 @@ const withMDX = require('next-mdx-enhanced')({
 });
 
 module.exports = withMDX({
+  reactStrictMode: true,
   pageExtensions: ['ts', 'tsx', 'mdx'],
   poweredByHeader: false,
   async redirects() {
