@@ -9,6 +9,8 @@ body {
 body {
   margin-left: 15px;
   margin-right: 15px;
+  background: #59a3a3;
+  background-image: linear-gradient(155deg, #7ce6d4 0%, #73a7ad 100%);
 }
 
 a {
@@ -19,6 +21,7 @@ a {
 @media (prefers-color-scheme: dark) {
   body {
     background: #002255;
+    background-image: linear-gradient(155deg, #212aa7 0%, #3533a1 100%);
   }
 
   h1,
