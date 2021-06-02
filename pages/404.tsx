@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import styles from '../styles/404.module.css';
-
+import styles from '../styles/404.module.scss';
 
 export default function PageNotFound() {
   return (

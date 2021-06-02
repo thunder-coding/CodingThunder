@@ -1,4 +1,4 @@
-import styles from '../styles/Home.module.css';
+import styles from '../styles/Home.module.scss';
 import Image from 'next/image';
 import Head from 'next/head';
 export default function Home() {
@@ -33,7 +33,11 @@ export default function Home() {
       </div>
       <div className={styles.introduction}>
         <h1>
-          Hey There <span className={styles.wavyHand}>👋</span>,
+          Hey There{' '}
+          <span aria-label=" " className={styles.wavyHand}>
+            👋
+          </span>
+          ,
         </h1>
         <p>
           I am Yaksh Bariya, a 14 year old programmer who loves to code and

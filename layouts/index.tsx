@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import styles from '../styles/Blog.module.css';
+import styles from '../styles/Blog.module.scss';
 
 interface FrontMatter {
   title: string;
