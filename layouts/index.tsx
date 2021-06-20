@@ -1,14 +1,6 @@
 import Head from 'next/head';
 import styles from '../styles/Blog.module.scss';
-
-interface FrontMatter {
-  title: string;
-  ogImage?: string;
-  description: string;
-  publishedTime: string;
-  modifiedTime?: string;
-  tags: ReadonlyArray<string>;
-}
+import type FrontMatter from '../types/FrontMatter';
 
 /**
  * This function will return an error if any problems are found inside front matter data.
