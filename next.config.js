@@ -1,22 +1,5 @@
-const rehypePrism = require('@mapbox/rehype-prism');
-const withMDX = require('next-mdx-enhanced')({
-  layoutPath: 'layouts',
-  defaultLayout: true,
-  fileExtensions: ['mdx'],
-
-  remarkPlugins: [],
-  rehypePlugins: [rehypePrism],
-  usesSrc: false,
-  extendFrontMatter: {
-    process: (mdxContent, frontMatter) => {},
-    phase: 'prebuild|loader|both',
-  },
-  reExportDataFetching: false,
-});
-
-module.exports = withMDX({
+module.exports = {
   reactStrictMode: true,
-  pageExtensions: ['ts', 'tsx', 'mdx'],
   poweredByHeader: false,
   async redirects() {
     return [
@@ -48,4 +31,4 @@ module.exports = withMDX({
       },
     ];
   },
-});
+};
