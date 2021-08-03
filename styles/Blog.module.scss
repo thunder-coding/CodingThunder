@@ -7,3 +7,19 @@
   font-style: italic;
   font-size: 20px;
 }
+
+.keyword {
+  position: relative;
+  background: #88ffba;
+  color: #dd7676;
+  border-radius: 3px;
+  padding: 1.7px 2.3px 0px;
+  margin: 5px;
+  font-family: 'Open Sans';
+  font-size: 20px;
+  top: 15px;
+  display: inline-block;
+}
+.keyword::before {
+  content: '#';
+}
