@@ -18,7 +18,7 @@ interface GetStaticProps {
 }
 export default function BlogHome(props: Props) {
   return (
-    <>
+    <div className={styles.blogContainer}>
       {props.posts.map((post) => {
         return (
           <Link href={`/posts/${post.slug.slice(0, post.slug.length - 4)}`}>
@@ -34,7 +34,7 @@ export default function BlogHome(props: Props) {
           </Link>
         );
       })}
-    </>
+    </div>
   );
 }
 
