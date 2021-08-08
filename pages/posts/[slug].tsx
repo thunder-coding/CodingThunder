@@ -44,7 +44,9 @@ function validateFrontmatter({
       throw new Error('Description should be of type string');
     case description.length > 100:
       throw new Error('Description too long');
-    case Array.isArray(tags) && tags.length > 8:
+    case !Array.isArray(tags):
+      throw new Error('tags should be an array of strings');
+    case tags.length > 8:
       throw new Error("Spamming tags isn't good, use atmost 8");
     case typeof ogImage === 'string' &&
       !fs.existsSync(path.join(process.cwd(), 'public', ogImage as string)):
