@@ -63,7 +63,7 @@ export default function BlogPost({ mdxSource, frontMatter }: Props) {
       <Head>
         <meta name="description" content={frontMatter.description} />
         <meta name="robots" content="index, follow" />
-        <meta property="og:type" content="artticle" />
+        <meta property="og:type" content="article" />
         <meta property="og:title" content={frontMatter.title} />
         <meta property="og:description" content={frontMatter.description} />
         <title>{frontMatter.title}</title>
