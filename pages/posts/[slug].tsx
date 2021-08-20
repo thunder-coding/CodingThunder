@@ -76,12 +76,16 @@ export default function BlogPost({ mdxSource, frontMatter }: Props) {
         <meta property="og:description" content={frontMatter.description} />
         <meta
           property="article:published_time"
-          content={new Date(`${frontMatter.publishedDate} Z+5:30`).toISOString()}
+          content={new Date(
+            `${frontMatter.publishedDate} Z+5:30`
+          ).toISOString()}
         />
         {frontMatter.modifiedDate && (
           <meta
             property="article:modified_time"
-            content={new Date(`${frontMatter.modifiedDate} Z+5:30`).toISOString()}
+            content={new Date(
+              `${frontMatter.modifiedDate} Z+5:30`
+            ).toISOString()}
           />
         )}
         <title>{frontMatter.title}</title>
