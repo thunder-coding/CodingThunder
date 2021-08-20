@@ -29,8 +29,8 @@ function validateFrontmatter({
   title,
   ogImage,
   description,
-  publishedTime,
-  modifiedTime,
+  publishedDate,
+  modifiedDate,
   tags,
 }: FrontMatter) {
   switch (true) {
