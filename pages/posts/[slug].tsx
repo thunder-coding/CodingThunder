@@ -95,6 +95,17 @@ export default function BlogPost({ mdxSource, frontMatter }: Props) {
       <main>
         <MDXRemote {...mdxSource} components={components} />
       </main>
+      <p>
+        {' '}
+        Published on{' '}
+        {new Date(frontMatter.publishedDate + ' Z+5:30').toLocaleDateString()}
+      </p>
+      {frontMatter.modifiedDate && (
+        <p>
+          Last modified{' '}
+          {new Date(frontMatter.modifiedDate + ' Z+5:30').toLocaleDateString()}
+        </p>
+      )}
       {frontMatter.tags.map((keyword, index) => (
         <span key={index} className={styles.keyword}>
           {keyword}
