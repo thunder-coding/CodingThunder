@@ -56,7 +56,7 @@ function validateFrontmatter({
     case typeof modifiedDate != 'undefined' &&
       isNaN(new Date(modifiedDate).getTime()):
       throw new Error('Modified date should be a valid date');
-    case new Date(modifiedDate as string).getTime() >
+    case new Date(modifiedDate as string).getTime() <
       new Date(publishedDate).getTime():
       throw new Error('Modified date should be after published date');
   }
