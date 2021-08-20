@@ -51,6 +51,14 @@ function validateFrontmatter({
     case typeof ogImage === 'string' &&
       !fs.existsSync(path.join(process.cwd(), 'public', ogImage as string)):
       throw new Error("OG Image doesn't exist");
+    case isNaN(new Date(publishedDate).getTime()):
+      throw new Error('Published date should be a valid date');
+    case typeof modifiedDate != 'undefined' &&
+      isNaN(new Date(modifiedDate).getTime()):
+      throw new Error('Modified date should be a valid date');
+    case new Date(modifiedDate as string).getTime() >
+      new Date(publishedDate).getTime():
+      throw new Error('Modified date should be after published date');
   }
 }
 
@@ -66,6 +74,16 @@ export default function BlogPost({ mdxSource, frontMatter }: Props) {
         <meta property="og:type" content="article" />
         <meta property="og:title" content={frontMatter.title} />
         <meta property="og:description" content={frontMatter.description} />
+        <meta
+          property="article:published_time"
+          content={frontMatter.publishedDate}
+        />
+        {frontMatter.modifiedDate && (
+          <meta
+            property="article:modified_time"
+            content={frontMatter.modifiedDate}
+          />
+        )}
         <title>{frontMatter.title}</title>
       </Head>
       <h1 className={styles.blogHeading}>{frontMatter.title}</h1>
