@@ -20,6 +20,22 @@
   top: 15px;
   display: inline-block;
 }
+
 .keyword::before {
   content: '#';
+}
+
+.Date {
+  text-align: right;
+  transform: skew(-10deg);
+  font-family: Monospace;
+  font-size: 18px;
+  color: #7856f6;
+  font-weight: bold;
+}
+
+@media (prefers-color-scheme: dark) {
+  .Date {
+    color: #f9dce0;
+  }
 }

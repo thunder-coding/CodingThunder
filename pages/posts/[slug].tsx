@@ -74,6 +74,9 @@ export default function BlogPost({ mdxSource, frontMatter }: Props) {
         <meta property="og:type" content="article" />
         <meta property="og:title" content={frontMatter.title} />
         <meta property="og:description" content={frontMatter.description} />
+        {frontMatter.ogImage && (
+          <meta property="og:image" content={frontMatter.ogImage} />
+        )}
         <meta
           property="article:published_time"
           content={new Date(
@@ -95,13 +98,13 @@ export default function BlogPost({ mdxSource, frontMatter }: Props) {
       <main>
         <MDXRemote {...mdxSource} components={components} />
       </main>
-      <p>
+      <p className={styles.Date}>
         {' '}
         Published on{' '}
         {new Date(frontMatter.publishedDate + ' Z+5:30').toLocaleDateString()}
       </p>
       {frontMatter.modifiedDate && (
-        <p>
+        <p className={styles.Date}>
           Last modified{' '}
           {new Date(frontMatter.modifiedDate + ' Z+5:30').toLocaleDateString()}
         </p>
