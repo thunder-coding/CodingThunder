@@ -14,10 +14,9 @@ body {
 }
 
 a {
-  color: inherit;
   text-decoration: none;
+  color: #b86657;
 }
-
 
 :not(pre) > code {
   padding: 1.7px;
@@ -46,6 +45,9 @@ a {
   :not(pre) > code {
     background: #4a4ea9;
     color: #c9c9c9;
+  }
+  a {
+    color: #76d854;
   }
 }
 
