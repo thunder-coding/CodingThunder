@@ -18,6 +18,15 @@ a {
   text-decoration: none;
 }
 
+
+:not(pre) > code {
+  padding: 1.7px;
+  font-family: 'Fira Code';
+  border-radius: 2px;
+  background: #5f99a6;
+  color: #363636;
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     background: #002255;
@@ -32,6 +41,11 @@ a {
   h6,
   p {
     color: #fff;
+  }
+
+  :not(pre) > code {
+    background: #4a4ea9;
+    color: #c9c9c9;
   }
 }
 
