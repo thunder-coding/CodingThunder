@@ -46,6 +46,11 @@ export async function getStaticProps(): Promise<GetStaticProps> {
         data: FrontMatter;
       };
       return { ...data, slug } as ExtendedFrontMatter;
-    }) as Array<ExtendedFrontMatter>;
+    })
+    .sort(
+      (a, b) =>
+        new Date(a.publishedDate).getTime() -
+        new Date(b.publishedDate).getTime()
+    ) as Array<ExtendedFrontMatter>;
   return { props: { posts: posts } };
 }
