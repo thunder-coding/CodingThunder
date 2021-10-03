@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styles from './Footer.module.scss';
 
 export default function Footer() {
@@ -5,31 +6,31 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.socialLinks}>
-        <a href="/codepen">
+        <Link href="/codepen" passHref>
           <div className={styles.imgContainer}>
             <img src="/codepen.svg" alt="CodePen Link" />
           </div>
-        </a>
-        <a href="/github">
+        </Link>
+        <Link href="/github" passHref>
           <div className={styles.imgContainer}>
             <img src="/github.svg" alt="GitHub Account" />
           </div>
-        </a>
-        <a href="/twitter">
+        </Link>
+        <Link href="/twitter" passHref>
           <div className={styles.imgContainer}>
             <img src="/twitter.svg" alt="Twitter Handle" />
           </div>
-        </a>
-        <a href="/discord">
+        </Link>
+        <Link href="/discord" passHref>
           <div className={styles.imgContainer}>
             <img src="/discord.svg" alt="Discord Link" />
           </div>
-        </a>
-        <a href="/linkedin">
+        </Link>
+        <Link href="/linkedin" passHref>
           <div className={styles.imgContainer}>
             <img src="/linkedin.svg" alt="LinkedIn Profile" />
           </div>
-        </a>
+        </Link>
       </div>
       <p className={styles.p}>© {year} Yaksh Bariya</p>
     </footer>

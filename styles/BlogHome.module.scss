@@ -6,7 +6,7 @@
   padding-bottom: 0;
   border-radius: 5px;
   background-image: linear-gradient(175deg, #83b7bd 0%, #4bb5c3 100%);
-  max-width: 600px;
+  max-width: 350px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -43,8 +43,15 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-flow: row wrap;
   }
   .blogContainer a {
     flex-basis: 40%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .blogContainer a {
+    flex-basis: 25%;
   }
 }

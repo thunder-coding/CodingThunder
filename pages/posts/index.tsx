@@ -19,14 +19,19 @@ interface GetStaticProps {
 export default function BlogHome(props: Props) {
   return (
     <div className={styles.blogContainer}>
-      {props.posts.map((post) => {
+      {props.posts.map((post, index) => {
         return (
-          <Link href={`/posts/${post.slug.slice(0, post.slug.length - 4)}`}>
+          <Link
+            href={`/posts/${post.slug.slice(0, post.slug.length - 4)}`}
+            key={index}
+          >
             <a
               className={styles.blogContainer}
               href={`/posts/${post.slug.slice(0, post.slug.length - 4)}`}
             >
-              {post.ogImage && <img width="100%" src={`/${post.ogImage}`} />}
+              {post.ogImage && (
+                <img width="100%" src={`/${post.ogImage}`} alt="" />
+              )}
 
               <h1>{post.title}</h1>
               <p>{post.description}</p>

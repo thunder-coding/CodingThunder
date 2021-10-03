@@ -14,7 +14,7 @@ export default function PageNotFound() {
           <div className={styles.errorDescription}>Page Not Found</div>
         </div>
       </div>
-      <Link href="/">
+      <Link href="/" passHref>
         <button className={styles.homeButton}>HOME</button>
       </Link>
     </>
