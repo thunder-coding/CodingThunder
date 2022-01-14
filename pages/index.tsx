@@ -40,7 +40,7 @@ export default function Home() {
           ,
         </h1>
         <p>
-          I am Yaksh Bariya, a 14 year old programmer who loves to code and
+          I am Yaksh Bariya, a 15 year old programmer who loves to code and
           explore the world of programming
         </p>
       </div>
