@@ -33,6 +33,9 @@ export default function Footer() {
         </Link>
       </div>
       <p className={styles.p}>© {year} Yaksh Bariya</p>
+      <Link href="/yaksh.key" passHref>
+        <p className={styles.p}>GPG Public Key</p>
+      </Link>
     </footer>
   );
 }
