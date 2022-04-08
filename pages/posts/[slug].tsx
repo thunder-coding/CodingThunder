@@ -33,6 +33,15 @@ function validateFrontmatter({
   modifiedDate,
   tags,
 }: FrontMatter) {
+  const _publishedDate =
+    new Date(publishedDate).getTimezoneOffset() - new Date().getTimezoneOffset()
+      ? new Date(publishedDate)
+      : new Date(`${publishedDate} Z+5:30`);
+  const _modifiedDate =
+    typeof modifiedDate != 'undefined' &&
+    new Date(modifiedDate).getTimezoneOffset() - new Date().getTimezoneOffset()
+      ? new Date(modifiedDate)
+      : new Date(`${modifiedDate} Z+5:30`);
   switch (true) {
     case typeof title != 'string':
       throw new Error('Title should be string');
@@ -51,13 +60,11 @@ function validateFrontmatter({
     case typeof ogImage === 'string' &&
       !fs.existsSync(path.join(process.cwd(), 'public', ogImage as string)):
       throw new Error("OG Image doesn't exist");
-    case isNaN(new Date(publishedDate).getTime()):
+    case isNaN(_publishedDate.getTime()):
       throw new Error('Published date should be a valid date');
-    case typeof modifiedDate != 'undefined' &&
-      isNaN(new Date(modifiedDate).getTime()):
+    case typeof _modifiedDate != 'undefined' && isNaN(_modifiedDate.getTime()):
       throw new Error('Modified date should be a valid date');
-    case new Date(modifiedDate as string).getTime() <
-      new Date(publishedDate).getTime():
+    case _modifiedDate.getTime() < new Date(publishedDate).getTime():
       throw new Error('Modified date should be after published date');
   }
 }
@@ -66,6 +73,32 @@ export default function BlogPost({ mdxSource, frontMatter }: Props) {
   const components = {
     a: Link,
   };
+
+  const months = [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December',
+  ];
+  const publishedDate =
+    new Date(frontMatter.publishedDate).getTimezoneOffset() -
+    new Date().getTimezoneOffset()
+      ? new Date(frontMatter.publishedDate)
+      : new Date(`${frontMatter.publishedDate} Z+5:30`);
+  const modifiedDate =
+    typeof frontMatter.modifiedDate != 'undefined' &&
+    new Date(frontMatter.modifiedDate).getTimezoneOffset() -
+      new Date().getTimezoneOffset()
+      ? new Date(frontMatter.modifiedDate)
+      : new Date(`${frontMatter.modifiedDate} Z+5:30`);
   return (
     <>
       <Head>
@@ -79,16 +112,12 @@ export default function BlogPost({ mdxSource, frontMatter }: Props) {
         )}
         <meta
           property="article:published_time"
-          content={new Date(
-            `${frontMatter.publishedDate} Z+5:30`
-          ).toISOString()}
+          content={publishedDate.toISOString()}
         />
         {frontMatter.modifiedDate && (
           <meta
             property="article:modified_time"
-            content={new Date(
-              `${frontMatter.modifiedDate} Z+5:30`
-            ).toISOString()}
+            content={modifiedDate.toISOString()}
           />
         )}
         <title>{frontMatter.title}</title>
@@ -99,14 +128,13 @@ export default function BlogPost({ mdxSource, frontMatter }: Props) {
         <MDXRemote {...mdxSource} components={components} />
       </main>
       <p className={styles.Date}>
-        {' '}
-        Published on{' '}
-        {new Date(frontMatter.publishedDate + ' Z+5:30').toLocaleDateString()}
+        Published on {months[publishedDate.getUTCMonth()]}{' '}
+        {publishedDate.getUTCDate()}, {publishedDate.getUTCFullYear()}
       </p>
       {frontMatter.modifiedDate && (
         <p className={styles.Date}>
-          Last modified{' '}
-          {new Date(frontMatter.modifiedDate + ' Z+5:30').toLocaleDateString()}
+          Published on {months[modifiedDate.getUTCMonth()]}{' '}
+          {modifiedDate.getUTCDate()}, {modifiedDate.getUTCFullYear()}
         </p>
       )}
       {frontMatter.tags.map((keyword, index) => (
