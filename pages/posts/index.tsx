@@ -54,8 +54,8 @@ export async function getStaticProps(): Promise<GetStaticProps> {
     })
     .sort(
       (a, b) =>
-        new Date(a.publishedDate).getTime() -
-        new Date(b.publishedDate).getTime()
+        new Date(b.publishedDate).getTime() -
+        new Date(a.publishedDate).getTime()
     ) as Array<ExtendedFrontMatter>;
   return { props: { posts: posts } };
 }
