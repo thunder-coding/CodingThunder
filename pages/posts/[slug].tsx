@@ -62,7 +62,7 @@ function validateFrontmatter({
       throw new Error("OG Image doesn't exist");
     case isNaN(_publishedDate.getTime()):
       throw new Error('Published date should be a valid date');
-    case typeof _modifiedDate != 'undefined' && isNaN(_modifiedDate.getTime()):
+    case !isNaN(_modifiedDate.getTime()) && isNaN(_modifiedDate.getTime()):
       throw new Error('Modified date should be a valid date');
     case _modifiedDate.getTime() < new Date(publishedDate).getTime():
       throw new Error('Modified date should be after published date');
