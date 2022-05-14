@@ -71,7 +71,7 @@ function validateFrontmatter({
 
 export default function BlogPost({ mdxSource, frontMatter }: Props) {
   const components = {
-    a: Link,
+    //    a: Link, TODO: Fix this
   };
 
   const months = [
