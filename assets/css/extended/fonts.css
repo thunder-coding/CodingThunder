@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "Fira Code";
+  src: url("/FiraCode.woff") format("woff");
+  font-weight: 470;
+  font-style: monospace;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("/OpenSans.ttf") format("truetype");
+}
+
+code {
+  font-family: "Fira Code";
+}

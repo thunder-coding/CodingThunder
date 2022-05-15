@@ -1,10 +1,17 @@
 ---
-title: 'Hello World: Welcome to my blog'
-description: 'Read how I built my blog site'
-ogImage: 'posts/hello-world.jpg'
-tags: ['hello world', 'blogging', 'developer blog', 'developer', 'programming']
-publishedDate: '4 October 2021'
+author: "Yaksh Bariya"
+title: "Hello World: Welcome to my blog"
+description: "Read how I built my blog site"
+cover:
+  image: "posts/hello-world.jpg"
+  alt: "Hello World"
+  caption: "An image with cool background with a friendly hello message"
+tags: ["hello world", "blogging", "developer blog", "developer", "programming"]
+publishdate: "2021-10-04T00:00:00+05:30"
+lastmod: "2022-05-16T16:00:00+05:30"
 ---
+
+> Note: this site has now moved to Hugo + PaperMod. This article should be considered absolute
 
 Just like how programmers write a hello world program first to check the functioning of their tools. In this blog, I will be testing all the features of my blog.
 
@@ -25,7 +32,7 @@ So, if you have known enough about me let's do what this blog was written for. S
 
 ## Code block test
 
-```tsx
+```ts
 function BlogPage(props: Props) {
   return <>...</>;
 }

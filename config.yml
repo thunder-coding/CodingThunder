@@ -1,0 +1,158 @@
+baseURL: "https://codingthunder.vercel.app/" # if your site is in 'https', then make sure your base url isn't written using 'http' otherwise your sitemap would contain http (as opposeed to https) URLs. This would affect Google indexing of your URLs.
+title: "Yaksh Bariya"
+paginate: 5
+theme: PaperMod
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+pygmentsUseClasses: true
+# googleAnalytics: UA-123-45
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  description: "Yaksh Bariya's website"
+  author: Yaksh Bariya
+  # author: ["Me", "You"] # multiple authors
+
+  defaultTheme: auto
+  # disableThemeToggle: true
+  ShowShareButtons: true
+  ShowReadingTime: true
+  # disableSpecial1stPost: true
+  displayFullLangName: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowRssButtonInSectionTermList: true
+  ShowToc: true
+  # comments: false
+  images: ["ogimage.jpg"]
+
+  profileMode:
+    enabled: true
+    title: Yaksh Bariya
+    subtitle: |
+      Hey there 👋,
+
+      Welcome to by website
+
+    imageUrl: "myimage.jpg"
+    imageTitle: Yaksh Bariya
+    imageWidth: 240
+    imageHeight: 240
+    buttons:
+      - name: Sponsor Me 💖
+        url: /sponsor
+
+  socialIcons:
+    - name: codepen
+      url: "https://codepen.io/thunder-coding"
+    - name: twitter
+      url: "https://twitter.com/CodingThunder"
+    - name: github
+      url: "https://github.com/thunder-coding"
+    - name: linkedin
+      url: "https://linkedin.com/in/CodingThunder"
+    - name: discord
+      url: "https://discord.gg/YMhxGjzsJ8"
+    - name: RsS
+      url: "index.xml"
+
+  # label:
+  #     text: "Home"
+  #     icon: icon.png
+  #     iconHeight: 35
+
+  # analytics:
+  #     google:
+  #         SiteVerificationTag: "XYZabc"
+
+  # assets:
+  #     favicon: "<link / abs url>"
+  #     favicon16x16: "<link / abs url>"
+  #     favicon32x32: "<link / abs url>"
+  #     apple_touch_icon: "<link / abs url>"
+  #     safari_pinned_tab: "<link / abs url>"
+
+  # cover:
+  #     hidden: true # hide everywhere but not in structured data
+  #     hiddenInList: true # hide on list pages and home
+  #     hiddenInSingle: true # hide on single page
+
+  # fuseOpts:
+  #     isCaseSensitive: false
+  #     shouldSort: true
+  #     location: 0
+  #     distance: 1000
+  #     threshold: 0.4
+  #     minMatchCharLength: 0
+  #     keys: ["title", "permalink", "summary", "content"]
+
+menu:
+  main:
+    - identifier: home
+      name: Home
+      url: /
+      weight: 1
+    - identifier: posts
+      name: Posts
+      url: /posts/
+      weight: 2
+    - identifier: sponsor
+      name: Sponsor Me
+      url: /sponsor/
+      weight: 3
+    - identifier: gpg_pubkey
+      name: GPG Public Key
+      url: /yaksh.gpg
+      weight: 4
+
+sectionPagesMenu: main
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    anchorLineNos: true
+    codeFences: true
+    guessSyntax: true
+    lineNos: true
+    noClasses: false
+    style: monokai
+
+privacy:
+  vimeo:
+    disabled: false
+    simple: true
+
+  twitter:
+    disabled: false
+    enableDNT: true
+    simple: true
+
+  instagram:
+    disabled: false
+    simple: true
+
+  youtube:
+    disabled: false
+    privacyEnhanced: true
+
+services:
+  twitter:
+    disableInlineCSS: true
