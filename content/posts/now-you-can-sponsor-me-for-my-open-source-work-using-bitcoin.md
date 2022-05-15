@@ -10,7 +10,7 @@ publishdate: "2022-04-08T22:00:00+05:30"
 lastmod: "2022-05-16T16:00:00+05:30"
 ---
 
-> See https://codingthunder.vercel.app/sponsor for an updated link including other cryptocurrencies and up to date info
+> See https://codingthunder.me/sponsor for an updated link including other cryptocurrencies and up to date info
 
 Hey there, this is to announce that now I do accept sponsorships for my open source contributions and work using Bitcoin. I mostly contribute to Termux's packaging work, porting packages and updating them. I also hope to start my own open source project soon and do some cool research.
 
