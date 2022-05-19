@@ -2,8 +2,8 @@
 author: "Yaksh Bariya"
 title: "Announcing Open Sourcing of my blog site"
 description: "Read how I just migrated my site from Next.js to Hugo + PaperMod"
-tags: ["blogging", "hugp", "website", "open source"]
-publishdate: "2022-05-19T00:00:00+05:30"
+tags: ["blogging", "hugo", "website", "open source"]
+publishdate: "2022-05-19T10:00:00+05:30"
 ---
 
 In my [Hello World](/posts/hello-world) post, I described how I set up my site, from a simple Next.js application to a blogging site. But then I realised that I spent more time in actually getting it work than on writing some real stuff, so I started feeling that I need to change this. The best way I could do this was to switch to an Open Source blogging solution. I found Hugo extremely good, and with the [PaperMod theme](https://github.com/adityatelange/hugo-PaperMod/), it did wonders.
