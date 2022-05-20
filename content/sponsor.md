@@ -30,3 +30,9 @@ ETH Address: `0x002bfCA4F893e9122801d64E1FA33efDafF0cD4A`
 DOGE Address: `D6nZ2fptuYouc2shckb8htfhaFF3TPV1by`
 
 ![Dogecoin QR Code](/dogecoin-qr.svg)
+
+### Litecoin
+
+LTC Address: `Lf78LRXnGMCD7DSSdpGZJtLcCkEVGTiJ6A`
+
+![Litecoin QR Code](/litecoin-qr.svg)
