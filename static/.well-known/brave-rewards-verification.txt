@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: codingthunder.me
+Token: 0d56f45400581472a733986513d3ee1b071cc750edb4bc6f75bc0d2d128889cc
