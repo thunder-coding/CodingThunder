@@ -15,24 +15,16 @@ Mostly I contribute to the [Termux project](https://termux.org) both as a contri
 
 ### Bitcoin
 
-BTC Address: `bitcoin:bc1qxclj04wefvrre367yeynqcwzv25250qm60thex`
-
-![Bitcoin QR Code](/bitcoin-qr.svg)
+BTC Address: `bc1p73m68nerdpzeefrx8xnnwkqspma9dy0f9a7ykqtf7488whd2mm6qhnk2dp`
 
 ### Ethereum
 
-ETH Address: `0x002bfCA4F893e9122801d64E1FA33efDafF0cD4A`
-
-![Ethereum QR Code](/ethereum-qr.svg)
+ETH Address: `0x3e86CBC54b4f9daCE9f616e3766555DeB914B632`
 
 ### Dogecoin
 
-DOGE Address: `D6nZ2fptuYouc2shckb8htfhaFF3TPV1by`
-
-![Dogecoin QR Code](/dogecoin-qr.svg)
+DOGE Address: `DBRmxAGo8Q19kkAb3jZyPDDU8dYXohn5r6`
 
 ### Litecoin
 
-LTC Address: `Lf78LRXnGMCD7DSSdpGZJtLcCkEVGTiJ6A`
-
-![Litecoin QR Code](/litecoin-qr.svg)
+LTC Address: `ltc1q5zjmj860hr6m6jl4pw868thczzeyp0z8yqw4ar`
