@@ -1,4 +1,4 @@
-baseURL: "https://thunder-coding.github.io/" # if your site is in 'https', then make sure your base url isn't written using 'http' otherwise your sitemap would contain http (as opposeed to https) URLs. This would affect Google indexing of your URLs.
+baseURL: "https://cd.is-a.dev/" # if your site is in 'https', then make sure your base url isn't written using 'http' otherwise your sitemap would contain http (as opposeed to https) URLs. This would affect Google indexing of your URLs.
 title: "Yaksh Bariya"
 paginate: 5
 theme: PaperMod
@@ -6,7 +6,7 @@ theme: PaperMod
 enableInlineShortcodes: true
 enableRobotsTXT: true
 buildDrafts: false
-buildFuture: false
+buildFuture: true
 buildExpired: false
 enableEmoji: true
 pygmentsUseClasses: true
@@ -28,7 +28,7 @@ params:
   author: Yaksh Bariya
   # author: ["Me", "You"] # multiple authors
 
-  defaultTheme: auto
+  defaultTheme: dark
   # disableThemeToggle: true
   ShowShareButtons: true
   ShowReadingTime: true
@@ -61,15 +61,15 @@ params:
   socialIcons:
     - name: codepen
       url: "https://codepen.io/thunder-coding"
-    - name: twitter
-      url: "https://twitter.com/CodingThunder"
+    - name: mastodon
+      url: "https://mastodon.social/@CodingThunder"
     - name: github
       url: "https://github.com/thunder-coding"
+    - name: codeberg
+      url: "https://codeberg.org/CodingThunder"
     - name: linkedin
       url: "https://linkedin.com/in/CodingThunder"
-    - name: discord
-      url: "https://discord.gg/YMhxGjzsJ8"
-    - name: RsS
+    - name: RSS
       url: "index.xml"
 
   # label:
