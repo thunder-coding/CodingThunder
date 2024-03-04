@@ -1,5 +1,5 @@
 ---
-title: Sponsor an Open Source enthusiast to encourage him ❤️
+title: Sponsor Me
 ShowToc: false
 ShowBreadCrumbs: false
 hideMeta: true

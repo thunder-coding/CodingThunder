@@ -3,7 +3,7 @@ author: "Yaksh Bariya"
 title: "How I decide if your website is worth a revisit"
 description: "In this new world full of SEO and AI crap, it is becoming difficult to find good content, even for hardcore techies like us. Here's how I do and and I hope it helps you too."
 tags: ["blogging", "website", "seo", "hacker news"]
-publishdate: "2024-03-04T21:15:15+05:30"
+publishdate: "2024-03-04T20:15:00+05:30"
 ---
 
 # Overview

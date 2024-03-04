@@ -1,1 +1,0 @@
-# I have no idea why this fixes the content under /content from showing up on homepage. Hugo update broke it, not a papermod issue, did a git bisect and was able to consistently reproduce with newer hugo
