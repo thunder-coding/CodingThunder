@@ -6,9 +6,9 @@ theme: PaperMod
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
-buildDrafts: false
+buildDrafts: true
 buildFuture: true
-buildExpired: false
+buildExpired: true
 enableEmoji: true
 pygmentsUseClasses: true
 # googleAnalytics: UA-123-45
