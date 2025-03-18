@@ -4,6 +4,7 @@ title: "Solution to HackSlash SigSTP: Trial of Cheaters Path problem"
 description: "How I managed to solve all of the HackSlash' SigSTP Induction problems"
 tags: ["NIT Patna", "hackslash", "sigstp", "competitive programming", "problem solving", "programming", "coding"]
 publishdate: "2025-03-18T23:35:00+05:30"
+lastmod: "2025-03-18T23:50:00+05:30"
 ---
 
 > [!note]
@@ -130,7 +131,7 @@ auto parsePuzzle(std::istream &inp) -> Puzzle {
 }
 ```
 
-Here, `MAKESURE_ELSE_ERROR_PARSING` is just a helper macro that throws an exception if the file doesn't match the expected format. Also [`Puzzle` is just a typedef to `std::unordered_map<Node, NodeData>`](https://github.com/thunder-coding/Hackslash-SigSTP2025-Solutions/blob/master/Task-3/parser.h#L23)
+Here, `MAKESURE_ELSE_ERROR_PARSING` is just a helper macro that throws an exception if the file doesn't match the expected format. Also [`Puzzle` is just a typedef to `std::unordered_map<Node, NodeData>`](https://github.com/thunder-coding/Hackslash-SigSTP2025-Solutions/blob/master/Task-3/parser.h#L23). I used `std::unordered_map` instead of `std::map` as in unordered map, lookups have a time complexity of `O(n)`
 
 
 ### Part 1
