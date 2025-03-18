@@ -1,6 +1,7 @@
 baseURL: "https://cd.is-a.dev/" # if your site is in 'https', then make sure your base url isn't written using 'http' otherwise your sitemap would contain http (as opposeed to https) URLs. This would affect Google indexing of your URLs.
 title: "Yaksh Bariya"
-paginate: 5
+pagination:
+  pagerSize: 5
 theme: PaperMod
 
 enableInlineShortcodes: true
@@ -116,6 +117,14 @@ menu:
       name: GPG Public Key
       url: /yaksh.gpg
       weight: 3
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 4
+    - identifier: sponsor
+      name: Sponsor Me
+      url: /sponsor/
+      weight: 5
 
 sectionPagesMenu: main
 
@@ -136,7 +145,7 @@ privacy:
     disabled: false
     simple: true
 
-  twitter:
+  x:
     disabled: false
     enableDNT: true
     simple: true
@@ -150,5 +159,5 @@ privacy:
     privacyEnhanced: true
 
 services:
-  twitter:
+  x:
     disableInlineCSS: true
