@@ -1,3 +1,3 @@
-# https://thunder-coding.github.io
+# https://thunders.website
 
 Source Code for my personal website
