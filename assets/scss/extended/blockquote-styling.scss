@@ -1,0 +1,134 @@
+@use 'sass:color';
+
+.alert {
+  margin: 20px 0;
+  padding: 0 14px;
+  border-inline-start: 5px solid var(--blockquote-color-left) !important;
+  background: linear-gradient(
+    to right,
+    var(--blockquote-color-beg1) 0%,
+    var(--blockquote-color-beg2) 0.3%,
+    var(--blockquote-color-mid1) 1.5%,
+    var(--blockquote-color-mid2) 40%,
+    var(--blockquote-color-end1) 90%,
+    var(--blockquote-color-end2) 100%
+  );
+  /* box-shadow: 10px 1px 15px 10px var(--heading-color-7); */
+}
+.alert-heading-container {
+  padding-top: 8px;
+  padding-bottom: 5px;
+}
+
+.alert-icon {
+  height: 1.5em;
+  display: inline;
+  vertical-align: middle;
+  margin-right: 10px;
+  margin-left: 10px;
+  fill: var(--blockquote-heading);
+}
+
+.alert-heading {
+  font-size: 1em;
+  vertical-align: middle;
+  font-family: "Fira Code";
+  font-weight: bolder;
+  position: relative;
+  top: 0.05em;
+  display: inline;
+  color: var(--blockquote-heading);
+}
+
+.alert-content {
+  padding-bottom: 30px;
+}
+
+.alert-type-caution {
+  --blockquote-color-beg1: #da363355;
+  --blockquote-color-beg2: #ff330044;
+  --blockquote-color-mid1: #ee330038;
+  --blockquote-color-mid2: #dd330030;
+  --blockquote-color-end1: #77330020;
+  --blockquote-color-end2: #66330002;
+  --blockquote-color-left: #da3633;
+  --blockquote-heading: #dd0000;
+}
+
+.dark .alert-type-caution {
+  --blockquote-heading: #ff7173;
+}
+
+.alert-type-tip {
+  --blockquote-color-beg1: #8aa9b955;
+  --blockquote-color-beg2: #9af9b944;
+  --blockquote-color-mid1: #67ff9838;
+  --blockquote-color-mid2: #aae9b930;
+  --blockquote-color-end1: #7acf5920;
+  --blockquote-color-end2: #aae96902;
+  --blockquote-color-left: #3fc950;
+  --blockquote-heading: #5f7740;
+}
+
+.dark .alert-type-tip {
+  --blockquote-heading: #3ff950;
+}
+
+.alert-type-important {
+  --blockquote-color-beg1: #8957ef55;
+  --blockquote-color-beg2: #89578f44;
+  --blockquote-color-mid1: #89578f38;
+  --blockquote-color-mid2: #a977af30;
+  --blockquote-color-end1: #a957ff20;
+  --blockquote-color-end2: #8957ff02;
+  --blockquote-color-left: #8957e5;
+  --blockquote-heading: #39175f;
+}
+
+.dark .alert-type-important {
+  --blockquote-heading: #c957ff;
+}
+
+.alert-type-warning {
+  --blockquote-color-beg1: #9e6a0355;
+  --blockquote-color-beg2: #9e6a0344;
+  --blockquote-color-mid1: #ae9a0338;
+  --blockquote-color-mid2: #ae9a5330;
+  --blockquote-color-end1: #9e6a5320;
+  --blockquote-color-end2: #9e6a5302;
+  --blockquote-color-left: #feaa53;
+  --blockquote-heading: #7e7e03;
+}
+
+.dark .alert-type-warning {
+  --blockquote-heading: #ffb03a;
+}
+
+.alert-type-note {
+  --blockquote-color-beg1: #104ffb55;
+  --blockquote-color-beg2: #207ffb44;
+  --blockquote-color-mid1: #557ffb38;
+  --blockquote-color-mid2: #909ffb30;
+  --blockquote-color-end1: #a0abeb20;
+  --blockquote-color-end2: #a0bbeb02;
+  --blockquote-color-left: #1f6feb;
+  --blockquote-heading: #1433f8;
+}
+
+.dark .alert-type-note {
+  --blockquote-heading: #54f3f8;
+}
+
+.alert-type-none {
+  --blockquote-color-beg1: #aaaaaa55;
+  --blockquote-color-beg2: #cccccc44;
+  --blockquote-color-mid1: #55555538;
+  --blockquote-color-mid2: #66666630;
+  --blockquote-color-end1: #66666620;
+  --blockquote-color-end2: #66666602;
+  --blockquote-color-left: #000000;
+}
+
+.dark .alert-type-none {
+  --blockquote-color-left: #ffffff;
+}
