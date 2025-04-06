@@ -87,10 +87,8 @@ fs.readFile('/dev/stdin', function(er, data) {
 
 Then I was like, huh! Why is this failing with an error indicating that the file `/dev/stdin` does not exist? I just did a quick `file /dev/stdin` and found that it doesn't exist. Nor did `/dev/stdout` and `/dev/stderr` exist. I just used to assume that they do exist on all devices! Then I looked on the internet to find the workaround, and [StackOverflow gave me a workaround: to use `/proc/self/fd/{fd}` where fd is 0, 1 or 2](https://stackoverflow.com/a/24598112). And it worked.
 
-Then I fixed the tests and kept the patches with me for around 3 years and forgot about it. And now that I decided to upstream some of the Android build fixes for Node.js which I was keeping so that others may benefit. I sent the PR and waited for CI to turn green, but it failed. And it turns out that MacOS doesn't have procfs (`/proc`), but exposes most of those stuff via sysctl as documented over https://web.archive.org/web/20200103161748/http://osxbook.com/book/bonus/ancient/procfs/. This time, I checked whether the patch was actually needed right now. Maybe Android now as `/dev/stdin`, `/dev/stdout` and `/dev/stderr`.
+Then I fixed the tests and kept the patches with me for around 3 years and forgot about it. And now that I decided to upstream some of the Android build fixes for Node.js which I was keeping with me for a long time so that others may benefit too. I sent the PR and waited for CI to turn green, but it failed. And it turns out that MacOS doesn't have procfs (`/proc`), but exposes most of those stuff via sysctl as documented over https://web.archive.org/web/20200103161748/http://osxbook.com/book/bonus/ancient/procfs/. 
 
-
-I tried running these tests patching `/dev/std*` to their `/proc/self/fd/*` replacements on my new Android 15 device. And it worked! You can find the PR where I am submitting the fixes for some of the build failures for Android to upstream over at https://github.com/nodejs/node/pull/57748
 
 Then I looked over on my Arch Linux system:
 
@@ -102,7 +100,7 @@ $ file /dev/std*
 ```
 Huh! and they exist on my Arch box. with symlinks to `/proc/self/fd/0`, `/proc/self/fd/1` and `/proc/self/fd/2`
 
-Then I once again looked on my newer Android device:
+This time, I checked whether the patch was actually needed right now. Maybe Android now as `/dev/stdin`, `/dev/stdout` and `/dev/stderr`. Then I once again looked on my newer Android device:
 ```bash
 # Can't use glob /dev/std* without root on Termux (works with ADB though)
 ~ $ file /dev/stdin
