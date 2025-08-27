@@ -1,5 +1,7 @@
 baseURL: "https://thunders.website/" # if your site is in 'https', then make sure your base url isn't written using 'http' otherwise your sitemap would contain http (as opposeed to https) URLs. This would affect Google indexing of your URLs.
 title: "Yaksh Bariya"
+sitemap:
+  changefreq: "always"
 pagination:
   pagerSize: 5
 theme: PaperMod
@@ -71,6 +73,8 @@ params:
       url: "https://codeberg.org/CodingThunder"
     - name: linkedin
       url: "https://linkedin.com/in/CodingThunder"
+    - name: hackerone
+      url: "https://hackerone.com/codingthunder"
     - name: RSS
       url: "index.xml"
 
