@@ -5,26 +5,36 @@ ShowBreadCrumbs: false
 hideMeta: true
 ---
 
-# Open Source work by me
+## Open Source work by me
 
-Mostly I contribute to the [Termux project](https://termux.org) both as a contributor and a maintainer reviewing PRs. For Termux, I maintain [Node.js](https://nodejs.org) and also help in updating critical libraries to which a lot of packages make use of. Although lately, I expect myself to work less here and more on personal projects which I'm planning to bring up.
+Mostly I contribute to the [Termux project](https://termux.org) both as a contributor and a maintainer reviewing PRs. For Termux, I maintain [Node.js](https://nodejs.org) and also help in updating critical libraries to which a lot of packages make use of.
 
-## Cryptocurrencies
+## Ways to sponsor
 
-> Note that these addresses aren't generated server-side and. In case you want private addresses for payment mail me at yakshbari4@gmail.com
+### GitHub Sponsors
 
-### Bitcoin
+I accept sponsors using GitHub Sponsors. You can pay by visiting my [sponsors profile on GitHub](https://github.com/sponsors/thunder-coding)
 
-BTC Address: `bc1p73m68nerdpzeefrx8xnnwkqspma9dy0f9a7ykqtf7488whd2mm6qhnk2dp`
+### Cryptocurrencies
 
-### Ethereum
+> Note that these addresses are static. In case you want private addresses for payment mail me at yakshbari4@gmail.com
 
-ETH Address: `0x3e86CBC54b4f9daCE9f616e3766555DeB914B632`
+#### Monero/XMR
 
-### Dogecoin
+XMR Address: `8ATnKUTz78ZVT6NbrorgCX5mMZ9H4FaPsVDHU5FPFTw9PoF4kbGd4736pFYUS74DU8BvBTzaRfQVJTWW5aMRHsTt4eAwN8A`
 
-DOGE Address: `DBRmxAGo8Q19kkAb3jZyPDDU8dYXohn5r6`
+#### Bitcoin
 
-### Litecoin
+BTC Address: `bc1qqsk2wamk340n28fxxdm44hge080wd6vshm9249`
 
-LTC Address: `ltc1q5zjmj860hr6m6jl4pw868thczzeyp0z8yqw4ar`
+#### Ethereum
+
+ETH Address: `0x17e39E09cd82C04b8a3232a556D754126569300F`
+
+#### Litecoin
+
+LTC Address: `ltc1q2g36hdwsjtfakpp5zntuykydw4c82f494kj7du`
+
+#### Solana
+
+SOL Address: `8CL6nL2rxsULp238m4mdEHazczL6ekmJbTnwoF7F8RBA`
